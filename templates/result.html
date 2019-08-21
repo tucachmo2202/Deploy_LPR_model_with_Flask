@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Machine learning deployment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div align="center" class="bg-info">
+        <h1>Nhận diện biển số xe máy</h1>
+    </div>
+    <div class="big" align="center">
+        <h3>Kết quả nhận diện: {{ kq }} </h3>
+        <img src="{{ src }}"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}">
+        <br style="padding-bottom: 40px">
+    </div>
+</body>
+
+</html>
