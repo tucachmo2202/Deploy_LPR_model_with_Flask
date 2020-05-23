@@ -25,7 +25,8 @@ def upload_file():
         print("Save sucessfully!")
         src = "static/Uploads/" + filename
         print(src)
-        so_bien_so = CODE.detect(src)
+        if (CODE.detect(src) == None):
+            so_bien_so = "Khon"
         return render_template('result.html', src = src, kq = so_bien_so)
 
 
